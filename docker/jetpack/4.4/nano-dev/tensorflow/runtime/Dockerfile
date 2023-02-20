@@ -3,7 +3,7 @@ ARG INDEX_URL
 ARG TF_PACKGAGE
 ARG TF_VERSION
 ARG NV_VERSION
-FROM ${IMAGE_NAME}:32.4.3-nano-dev-jetpack-4.4-runtime as tensorflow-base
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.4.3-nano-dev-jetpack-4.4-runtime as tensorflow-base
 ARG INDEX_URL
 ARG TF_PACKGAGE
 ARG TF_VERSION

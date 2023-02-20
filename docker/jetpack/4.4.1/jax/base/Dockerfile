@@ -1,6 +1,6 @@
 
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:32.4.4-jax
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.4.4-jax
 
 LABEL com.nvidia.jetpack.version="4.4.1"
 

@@ -1,6 +1,6 @@
 
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:32.4.3-tx2-4gb
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.4.3-tx2-4gb
 
 LABEL com.nvidia.jetpack.version="4.4"
 

@@ -3,7 +3,7 @@ ARG INDEX_URL
 ARG TF_PACKGAGE
 ARG TF_VERSION
 ARG NV_VERSION
-FROM ${IMAGE_NAME}:32.3.1-jax-8gb-jetpack-4.3-runtime-cudnn as tensorflow-base
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.3.1-jax-8gb-jetpack-4.3-runtime-cudnn as tensorflow-base
 ARG INDEX_URL
 ARG TF_PACKGAGE
 ARG TF_VERSION

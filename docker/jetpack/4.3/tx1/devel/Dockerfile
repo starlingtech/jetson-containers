@@ -1,5 +1,5 @@
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:32.3.1-tx1-jetpack-4.3-runtime
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.3.1-tx1-jetpack-4.3-runtime
 
 # CUDA Toolkit for L4T
 

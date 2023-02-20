@@ -1,6 +1,6 @@
 
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:32.3.1-nano
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.3.1-nano
 
 LABEL com.nvidia.jetpack.version="4.3"
 

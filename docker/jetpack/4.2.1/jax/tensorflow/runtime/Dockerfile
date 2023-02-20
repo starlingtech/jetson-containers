@@ -4,7 +4,7 @@ ARG TF_PACKGAGE
 ARG TF_VERSION
 ARG NV_VERSION
 ARG DEPENDENCIES_IMAGE
-FROM ${DEPENDENCIES_IMAGE} as dependencies
+FROM --platform=linux/arm64 ${DEPENDENCIES_IMAGE} as dependencies
 ARG IMAGE_NAME
 FROM ${IMAGE_NAME}:32.2.0-jax-jetpack-4.2.1-runtime as tensorflow-base
 ARG INDEX_URL

@@ -1,6 +1,6 @@
 ARG IMAGE_NAME
 ARG DEPENDENCIES_IMAGE
-FROM ${DEPENDENCIES_IMAGE} as dependencies
+FROM --platform=linux/arm64 ${DEPENDENCIES_IMAGE} as dependencies
 ARG IMAGE_NAME
 FROM ${IMAGE_NAME}:32.1-tx2-jetpack-4.2-base
 

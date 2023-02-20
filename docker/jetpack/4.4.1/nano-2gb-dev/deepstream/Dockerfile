@@ -1,5 +1,5 @@
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:32.4.4-nano-2gb-dev-jetpack-4.4.1-base
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.4.4-nano-2gb-dev-jetpack-4.4.1-base
 
 # NVIDIA VisionWorks Toolkit
 

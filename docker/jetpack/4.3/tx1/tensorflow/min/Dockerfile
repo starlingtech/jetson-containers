@@ -3,7 +3,7 @@ ARG INDEX_URL
 ARG TF_PACKGAGE
 ARG TF_VERSION
 ARG NV_VERSION
-FROM ${IMAGE_NAME}:32.3.1-tx1-jetpack-4.3-base as tensorflow-base
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.3.1-tx1-jetpack-4.3-base as tensorflow-base
 ARG INDEX_URL
 ARG TF_PACKGAGE
 ARG TF_VERSION

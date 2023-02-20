@@ -1,5 +1,5 @@
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:32.3.1-jax-8gb-jetpack-4.3-devel-cudnn
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.3.1-jax-8gb-jetpack-4.3-devel-cudnn
 
 # NVIDIA VisionWorks Toolkit
 

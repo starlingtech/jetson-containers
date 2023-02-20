@@ -1,7 +1,7 @@
 
 ARG DEPENDENCIES_IMAGE
 ARG IMAGE_NAME
-FROM ${DEPENDENCIES_IMAGE} as dependencies
+FROM --platform=linux/arm64 ${DEPENDENCIES_IMAGE} as dependencies
 
 ARG IMAGE_NAME
 FROM ${IMAGE_NAME}:32.1-nano-dev-jetpack-4.2-runtime

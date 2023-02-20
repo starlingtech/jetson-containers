@@ -1,5 +1,5 @@
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:32.4.4-tx1-jetpack-4.4.1-devel-cudnn
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.4.4-tx1-jetpack-4.4.1-devel-cudnn
 
 # NVIDIA VisionWorks Toolkit
 

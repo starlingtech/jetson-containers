@@ -1,5 +1,5 @@
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:32.4.4-nano-dev-jetpack-4.4.1-devel as builder
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.4.4-nano-dev-jetpack-4.4.1-devel as builder
 
 WORKDIR /usr/local/cuda-10.2/samples
 

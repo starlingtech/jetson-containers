@@ -1,5 +1,5 @@
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:32.4.3-nano-dev-jetpack-4.4-devel
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.4.3-nano-dev-jetpack-4.4-devel
 
 # NVIDIA CUDA Deep Neural Network library (cuDNN)
 
