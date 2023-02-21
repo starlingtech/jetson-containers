@@ -6,7 +6,7 @@ WORKDIR /usr/local/cuda-10.2/samples
 RUN make -j4
 
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:32.4.4-nx-jetpack-4.4.1-runtime as base
+FROM --platform=linux/arm64 ${IMAGE_NAME}:32.4.4-nx-jetpack-4.4.1-runtime as base
 
 # Prereqs
 
